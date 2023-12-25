@@ -1,0 +1,330 @@
+/* CSS */
+:root {
+    --magenta: #b55163;
+    --pink: #f8d6d9;
+    --blue: #95b4cc;
+    --white: #ffffff;
+    --purple: #8258a2;
+    --darkblue: #2a5b7f;
+    --beige: #faf8f1;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1;
+    font-size: 100%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--white);
+    color: var(--magenta);
+    display: flex;
+}
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em #cccccc;
+    background-color: var(--pink);
+}
+ 
+/* header */
+header {
+    padding: 10px;
+    background-color: var(--white);
+}
+
+header h1 {
+    margin: 10px 10px;
+    color: var(--purple);
+}
+ 
+/* navigasi */
+nav {
+    display: block;
+    background-color: var(--blue);
+}
+
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: var(--magenta);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+/* Login Section */
+.login {
+    margin: 5% auto;
+    margin-top: 0rem;
+    padding: 5%;
+    width: 85%;
+    background-color: var(--pink);
+}
+
+.login .form_container {
+    background-color: #F4F7F8;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.login label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7D8791;
+    margin-bottom: 5px;
+    display: block;
+}
+  
+.login input {
+    font-size: 16px;
+    font-weight: 300;
+    color: #4E545B;
+    padding: 10px 15px;
+    border: 1px solid #D1D6DB;
+    border-radius: 5px;
+    background-color: #F4F7F8;
+    width: 100%;
+    outline: none;
+}
+  
+.login input:focus {
+    border: 1px solid #292E34;
+}
+  
+/* Submit */
+.submit input {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #292E34;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+  
+.submit input:hover {
+    background-color: #3B4249;
+}
+  
+.form_container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+}
+  
+/* Content Panel */
+.content {
+    background-color: var(--pink);
+    padding: 50px 30px;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-style: italic;
+    color: var(--darkblue);
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+/* tabel */
+body{
+    font-family: sans-serif;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+    border-radius: 20%;
+}
+
+th, td{
+    border: 1px solid var(--beige);
+    font-size: 16px;
+    padding: 15px 15px;
+}
+
+table th {
+    background: var(--magenta);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+table tr {
+    background: var(--white);
+    color: var(--darkblue);
+    font-weight: 500;
+}
+  
+ 
+/* Tambah Barang */
+.input{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.input label {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.input input[type="text"], form textarea {
+    height: 12px;
+    border: 1px solid rgb(123, 169, 223);
+    padding: 5px;
+}
+.submit input{
+    border: 1px solid var(--white);
+    background-color: var(--darkblue);
+    color: var(--white);
+    padding: 5px 15px;
+    margin-top: 5px;
+    margin-left: 170px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit input:hover {
+    background-color: var(--blue);
+    color: var(--darkblue);
+    font-weight: bold;
+}
+
+/* Contact */
+.contact {
+    margin: 5% auto;
+    margin-top: 0rem;
+    padding: 5%;
+    width: 85%;
+    background-color: var(--pink);
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--darkblue);
+}
+
+.contact h2 span {
+    color: var(--magenta);
+}
+
+.contact .row {
+    display: flex;
+    margin-top: 1rem;
+    background-color: var(--beige);
+    border-radius: 0.5rem;
+    height: 25rem;
+}
+  
+.contact .row .map {
+    flex: 1 1 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.contact .row form {
+    flex: 1 1 30rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    row-gap: 0.5rem;
+}
+  
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    border: 1px solid var(--purple);
+    background-color: var(--white);
+    padding-left: 2rem;
+    border-radius: 0.4rem;
+}
+  
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1rem;
+    background: none;
+    color: var(--magenta);
+    border: none;
+}
+  
+.contact .row form .btn {
+    margin-top: 1.8rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: var(--white);
+    border: 1px solid var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.contact .row form .btn:hover {
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    background-color: var(--white);
+}
+
+/* footer */
+footer {
+    background-color: var(--blue);
+    padding: 20px;
+    color: var(--magenta);
+    text-align: center;
+}
+
+footer p {
+    color: var(--magenta);
+    font-weight: 700;
+}
+
+footer a {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--darkblue);
+}
